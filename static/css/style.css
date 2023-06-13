@@ -1,0 +1,137 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-image: linear-gradient(to bottom, #FBC2EB, #A18CD1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    padding: 20px 0;
+    color: #b62b2b;
+    font-size: 32px;
+}
+  
+/* Container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-image: linear-gradient(to top, #FBC2EB, #A18CD1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    box-shadow: -5px -5px 10px 0px rgba(136, 143, 177, 0.5), 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+/* Welcoming Text */
+.welcoming {
+    flex: 1;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #FCE4EC;
+    box-shadow: 6px 6px 10px 6px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+/* Form */
+.form {
+    flex: 1;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #E1BEE7;
+    box-shadow: 6px 6px 10px 6px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+}
+  
+form {
+    display: flex;
+    flex-direction: column;
+}
+  
+label {
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+}
+  
+input[type="text"] {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #FF5252;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+ 
+button:hover {
+    background-color: #E53935;
+}
+
+/* Flashed Messages */
+.flashes {
+    list-style-type: none;
+    padding: 0;
+}
+  
+.flashes li {
+    color: red;
+    margin-bottom: 5px;
+}
+
+/* Greeting Page */
+.box {
+    max-width: 600px;
+    margin: auto; /* Set top, bottom, left, and right margin to auto */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 40px;
+    background-color: #E0F7FA;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+  
+  
+.greeting {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+  
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #FF5252;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+}
+  
+.btn:hover {
+    background-color: #E53935;
+}
+  

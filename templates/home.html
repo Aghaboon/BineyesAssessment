@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="static/css/style.css" type="text/css" rel="stylesheet"/>
+    <link href="static/xyzImage.png" rel="icon">
+    <title>HomePage</title>
+</head>
+<body>
+    <h1>Welcome to XYZ Company</h1>
+    <div class="container">
+        <div class="welcoming">
+            <p>
+                We are dedicated to providing innovative software solutions that transform businesses and empower individuals. 
+                With our team of talented developers and cutting-edge technologies, 
+                we strive to deliver exceptional results that exceed your expectations.
+                <br><br>
+                At <b>XYZ Software Company</b>, we believe in the power of technology to drive growth and enable success. 
+                Whether you're a startup, a small business, or a large enterprise, 
+                we have the expertise to develop tailored software solutions to meet your unique needs.
+                <br><br>
+                Explore our web application and discover the possibilities. 
+                We're excited to embark on this journey with you and help you unlock your full potential.
+                <br><br><br>
+                <b>Let's shape the future together!</b>
+            </p>
+        </div>
+        <div class="form">
+            <img src="static/xyzImage.png" alt="company icon" width="400" height="250">
+            <form method="POST" action="/greeting">
+                <label for="name">Enter your name:</label>
+                <input type="text" id="name" name="name" required>
+                <button type="submit">Submit</button>
+            </form>
+            {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <ul class="flashes">
+                    {% for message in messages %}
+                        <li>{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+            {% endwith %}
+        </div>
+    </div>
+</body>
+</html>
